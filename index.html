@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadApp()">
+
+    <div class="contenido">
+        <h2>Lista de tareas</h2>
+        <div class="inputs">
+            <form id="forma" onsubmit="return false;">
+                <input type="text" placeholder="Tarea" id="task">
+                <input type="text" id="dateTask" placeholder="Hora"><br>
+                <button onclick="sendTasks()" class="button">+</button>
+            </form>
+        </div>
+        <div class="tareas">
+            <div class="tareas_pend">
+                <h2>Tareas pendientes:</h2>
+                <ul id="tareas">
+                    
+                </ul>
+            </div>
+
+
+            <div class="tareas-done">
+                <h2>Tareas completadas:</h2>
+                <ul id="t-done">
+            
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="task.js"></script>
+    <script src="doneTasks.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
